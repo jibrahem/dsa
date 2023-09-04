@@ -86,6 +86,8 @@ class SinglyLinkedList {
         // Return the value of head node
 
         // Your code here
+        if(!this.head) return undefined
+        return this.head.value
 
         // Write your hypothesis on the time complexity of this method here
     }
@@ -94,6 +96,13 @@ class SinglyLinkedList {
         // Print out the linked list
 
         // Your code here
+        if(!this.head) return
+
+        let curr = this.head
+        while(curr){
+            console.log(curr.value)
+            curr = curr.next
+        }
 
         // Write your hypothesis on the time complexity of this method here
     }
