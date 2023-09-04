@@ -54,7 +54,7 @@ class SinglyLinkedList {
         // Remove node at head
 
         // Your code here
-        if(!this.head) return;
+        if (!this.head) return;
         const oldHead = this.head
         this.head = this.head.next
         this.length--;
@@ -67,8 +67,18 @@ class SinglyLinkedList {
         // Remove node at tail
 
         // Your code here
-        
+        if (!this.head) return;
 
+        let curr = this.head
+        let prev
+        while (curr.next) {
+            prev = curr
+            curr = curr.next
+        }
+        if (!prev) this.head = null
+        else prev.next = null
+        this.length--
+        return curr
         // Write your hypothesis on the time complexity of this method here
     }
 
