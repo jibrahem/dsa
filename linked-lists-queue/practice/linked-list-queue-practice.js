@@ -34,6 +34,15 @@ class SinglyLinkedList {
         // Implement in O(n) and in O(1) time complexity
 
         // Your code here
+        let length = 0;
+        if (!this.head) return length;
+
+        let curr = this.head
+        while (curr.next) {
+            length++
+            curr = curr.next
+        }
+        return length
     }
 
     sumOfNodes() {
@@ -63,7 +72,7 @@ class SinglyLinkedList {
     findMid() {
         // Returns the middle node
         // Implement this as a singly linked list then as a doubly linked list
-            // How do the implementation for singly and doubly vary if at all?
+        // How do the implementation for singly and doubly vary if at all?
 
         // Your code here
 
@@ -75,7 +84,7 @@ class SinglyLinkedList {
         // Returns a new reversed version of the linked list
         // Try implementing it by returning a new linked list then returning
         // the original linked list reversed in place
-            // Does the time complexity change? How about space complexity?
+        // Does the time complexity change? How about space complexity?
 
         // Your code here
 
@@ -125,10 +134,10 @@ class DoublyLinkedList {
     findMid() {
         // Returns the middle node
         // Implement this as a singly linked list then as a doubly linked list
-            // How do the implementation for singly and doubly vary if at all?
+        // How do the implementation for singly and doubly vary if at all?
 
         // Your code here
-        
+
         // Write your hypothesis on the time complexity of this method here
     }
 
