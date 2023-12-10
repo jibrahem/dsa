@@ -1,10 +1,10 @@
-// class Node {
-//   constructor(val) {
-//     this.val = val;
-//     this.left = null;
-//     this.right = null;
-//   }
-// }
+class Node {
+  constructor(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
+  }
+}
 
 const treeIncludes = (root, target) => {
   if (root === null) return false
