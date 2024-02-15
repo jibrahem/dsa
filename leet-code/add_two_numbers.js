@@ -13,10 +13,14 @@ You may assume the two numbers do not contain any leading zero, except the numbe
  * @return {ListNode}
  */
 var addTwoNumbers = function (l1, l2) {
+    // create variable to hold a head
     let dummyHead = new ListNode(0); // Dummy head to simplify the code
+    // create variable current set equal to dummy head
     let current = dummyHead;
+    // create varibale carry set equal 0
     let carry = 0;
 
+    // while there is still a value l1 or l2
     while (l1 || l2) {
         let x = l1 ? l1.val : 0;
         let y = l2 ? l2.val : 0;
