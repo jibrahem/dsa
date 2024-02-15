@@ -22,10 +22,14 @@ var addTwoNumbers = function (l1, l2) {
 
     // while there is still a value l1 or l2
     while (l1 || l2) {
+        // create variable x, if there is a l1 value set it equal to it if not 0
         let x = l1 ? l1.val : 0;
+        // create variable y, if there is a l2 value set it equal to it if not 0
         let y = l2 ? l2.val : 0;
+        //create variable sum and set it equal to the sum of x, y, and carry
         let sum = carry + x + y;
 
+        // math.floor returns the value rounded down
         carry = Math.floor(sum / 10);
         current.next = new ListNode(sum % 10);
         current = current.next;
