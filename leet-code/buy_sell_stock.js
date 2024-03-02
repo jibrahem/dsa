@@ -9,8 +9,6 @@ Return the maximum profit you can achieve from this transaction.If you cannot ac
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function (prices) {
-
     function maximumProfit(prices) {
         const n = prices.length;
         let profit = 0;
@@ -26,5 +24,3 @@ var maxProfit = function (prices) {
 
         return profit;
     }
-
-};
